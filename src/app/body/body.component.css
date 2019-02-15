@@ -1,0 +1,13 @@
+.jumb {
+  text-align: center;
+  color:rgba(1,1,1,0.9);
+  background-color: rgba(0,0,0,0.0);
+}
+
+.innerJumb {
+  color: rgba(1,1,1,0.4);
+}
+
+.outJumb {
+  color: rgba(1,1,1,0.7);
+}
