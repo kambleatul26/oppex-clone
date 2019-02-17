@@ -1,0 +1,21 @@
+<p [id]='myId'>
+  binding works!
+</p>
+<h1>{{data}}</h1>
+<input class='form-control' [class]='pap' value="Scpn">
+<p [ngClass]='classs'>Hari</p>
+<p [ngStyle]='style'>hari</p>
+<button type="submit" (click)="myClick($event)">Click me</button>
+<input type="text" [(ngModel)]='name'> {{name}}
+<table class="table table-striped">
+  <tr>
+    <th>ID</th>
+    <th>Product</th>
+    <th>Price</th>
+  </tr>
+  <tr *ngFor="let n of newProducts">
+    <td>{{n.id}}</td>
+    <td>{{n.name}}</td>
+    <td>{{n.price}}</td>
+  </tr>
+</table>

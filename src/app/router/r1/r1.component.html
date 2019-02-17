@@ -1,0 +1,48 @@
+<p>
+  r1 works!
+</p>
+<h3>
+  <p>Welcome to {{title}}
+    <br>{{10+20}}
+    <br> {{name+" and "+title}}
+    <br> {{name.toLowerCase()}}
+    <br> {{name.toUpperCase()}}
+    <br> {{name.length}}
+    <br> {{months}}
+    <br> {{months.length}}
+  </p>
+</h3>
+
+<div *ngFor="let month of months;index as i;first as f;last as l">
+  <h3>{{i}} {{month}} {{f}} {{l}}</h3>
+</div>
+<div *ngIf="isAvailable; else other">
+  <h1>Available</h1>
+</div>
+<ng-template #other>
+  <h1>Not-Available</h1>
+</ng-template>
+<br>
+<select name="Months">
+  <option *ngFor="let month of months">
+    {{month}}</option>
+
+</select>
+<br>
+
+<div [ngSwitch]='month'>
+  <div *ngSwitchCase="'january'">JANUARY</div>
+  <div *ngSwitchCase="'february'">FEBRUARY</div>
+  <div *ngSwitchCase="'march'">MARCH</div>
+  <div *ngSwitchCase="'april'">APRIL</div>
+  <div *ngSwitchCase="'may'">MAY</div>
+  <div *ngSwitchCase="'june'">JUNE</div>
+  <div *ngSwitchDefault>No Month</div>
+</div>
+
+<table border="black">
+  <tr *ngFor="let n of num;index as i">
+    <td>{{i}}</td>
+    <td *ngFor="let m of n">{{m}}</td>
+  </tr>
+</table>

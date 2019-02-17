@@ -8,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class SearchComponent implements OnInit {
 
   constructor() { }
-
+   msg='9,000,000 tenders at your fingertips.';
+   msg1='Start free trial for 14 days.No credit card needed.'
   ngOnInit() {
   }
 
