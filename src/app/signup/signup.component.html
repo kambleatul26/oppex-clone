@@ -1,0 +1,47 @@
+<div class= "back">
+    <div class="container">
+        <div class="jumbotron jumb">
+          <h1 class="display-4"><img src="/src/assets/images/oppex_logo.png" height="50px" alt=""></h1>
+          <p>Win more business with Oppex.</p>
+          <p>You are signing up for a 14-day free trial of Oppex Professional.</p>
+          <a href="#">See different plans and pricing options.</a>
+        </div>
+      </div>
+
+    <mat-card class="container" style="width: 25%">
+        <mat-toolbar>
+            <nav aria-label="...">
+                <ul class="pagination pagination-lg">
+                  <li class="page-item"><a class="page-link" (click)="func()">SIGN UP</a></li>
+                  <li class="page-item"><a class="page-link" (click)="func1()">LOGIN</a></li>
+                </ul>
+              </nav>
+        </mat-toolbar>
+        <form action="" (submit)="onSignup(postForm)" #postForm = "ngForm">
+            <mat-form-field>
+                <input matInput type="text" placeholder="First Name" name = "fname" ngModel required #fname = "ngModel">
+                <mat-error *ngIf="fname.invalid">Please Enter First Name</mat-error>
+              </mat-form-field>
+              <mat-form-field>
+                  <input matInput type="text" placeholder="Last Name" name = "lname" ngModel required #lname = "ngModel">
+                  <mat-error *ngIf="lname.invalid">Please Enter Last Name</mat-error>
+              </mat-form-field>
+              <mat-form-field>
+                  <input matInput type="email" placeholder="Email ID" name = "email" ngModel required #mail = "ngModel">
+                  <mat-error *ngIf="mail.invalid">Please Enter Email</mat-error>
+              </mat-form-field>
+              <mat-form-field>
+                <input matInput type="password" placeholder="Password" name= "pass1" ngModel minlength="8" required #pass1 = "ngModel">
+              </mat-form-field>
+              <mat-form-field>
+                <input matInput type="password" placeholder="Confirm Password" name= "pass2" ngModel required #pass2 = "ngModel">
+                <mat-error *ngIf="pass1 !== pass2">PASSWORDS DO NOT MATCH</mat-error>
+              </mat-form-field>
+              <button
+                mat-raised-button
+                color = "primary"
+                type = "submit">GET STARTED</button>
+
+        </form>
+      </mat-card>
+</div>

@@ -1,4 +1,4 @@
-.jumb {
+.jumbo {
   text-align: center;
   color:rgba(1,1,1,0.9);
   background-color: rgba(0,0,0,0.0);
@@ -10,4 +10,22 @@
 
 .outJumb {
   color: rgba(1,1,1,0.7);
+}
+
+.jumb {
+  padding-top: 25%;
+  text-align: center;
+  color: white;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.0);
+}
+
+.back {
+  background-image: url("/src/assets/images/header.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.whiteText {
+  color: white;
 }
