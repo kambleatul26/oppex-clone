@@ -1,3 +1,7 @@
+.navbar.transparent.navbar-inverse .navbar-inner {
+  background-color: rgba(0,0,0,0.0);
+}
+
 .jumb {
   padding-top: 25%;
   text-align: center;
@@ -12,6 +16,6 @@
   background-size: 100% 100%;
 }
 
-.bg-light {
-  background-color: #123 !important;
+.whiteText {
+  color: white;
 }
