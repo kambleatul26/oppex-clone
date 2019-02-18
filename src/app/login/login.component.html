@@ -1,36 +1,31 @@
-<div class= "back">
+<div class="back">
     <div class="container">
         <div class="jumbotron jumb">
-          <h1 class="display-4"><img src="/src/assets/images/oppex_logo.png" height="50px" alt=""></h1>
-          <p>Win more business with Oppex.</p>
+            <h1 class="display-4"><img src="/src/assets/images/oppex_logo.png" height="50px" alt=""></h1>
+            <p>Win more business with Oppex.</p>
         </div>
-      </div>
+    </div>
 
     <mat-card class="container" style="width: 25%">
         <mat-toolbar>
             <nav aria-label="...">
                 <ul class="pagination pagination-lg">
-                  <li class="page-item"><a class="page-link" (click)="func()">SIGN UP</a></li>
-                  <li class="page-item"><a class="page-link" (click)="func1()">LOGIN</a></li>
+                    <li class="page-item"><a class="page-link" (click)="func()">SIGN UP</a></li>
+                    <li class="page-item"><a class="page-link" (click)="func1()">LOGIN</a></li>
                 </ul>
-              </nav>
+            </nav>
         </mat-toolbar>
-        <form action="" (submit)="onLogin(postForm)" #postForm = "ngForm">
+        <form action="" (submit)="onLogin(postForm)" #postForm="ngForm">
             <mat-form-field>
-                <input matInput type="email" placeholder="Email ID" name = "email" ngModel required #mail = "ngModel">
+                <input matInput type="email" placeholder="Email ID" name="email" ngModel required #mail="ngModel">
                 <mat-error *ngIf="mail.invalid">Please Enter Email</mat-error>
-              </mat-form-field>
-              <mat-form-field>
-                <input matInput type="password" placeholder="password" name= "pass" ngModel required #pass = "ngModel">
-              </mat-form-field>
-              <button
-                mat-raised-button
-                color = "primary"
-                type = "submit">LOGIN</button>
-              <button
-                mat-raised-button
-                color = "warn">FORGOT PASSWORD</button>
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput type="password" placeholder="password" name="pass" ngModel required #pass="ngModel">
+            </mat-form-field>
+            <button mat-raised-button color="primary" type="submit">LOGIN</button>
+            <button mat-raised-button color="warn">FORGOT PASSWORD</button>
 
         </form>
-      </mat-card>
+    </mat-card>
 </div>
