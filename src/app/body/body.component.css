@@ -29,3 +29,9 @@
 .whiteText {
   color: white;
 }
+
+.get-Touch-div {
+  width: 250px;
+  text-align: center;
+  padding: 10% 0% 3% 0%;
+}

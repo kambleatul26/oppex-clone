@@ -1,0 +1,23 @@
+li {
+  text-align: left;
+}
+
+div{
+
+  text-align:center;
+}
+.a{
+  font-family:Whitney SSm A,Whitney SSm B,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-size:50px;
+
+}
+.b{
+  font-size:30px;
+}
+.c{
+  line-height: 100%;
+}
+
+.e{
+  font-size:20px;
+}

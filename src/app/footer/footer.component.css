@@ -2,3 +2,7 @@ td, th {
   padding-left: 3em;
   padding-right: 3em;
 }
+
+.light {
+  color: rgba(1,1,1,0.4);
+}
