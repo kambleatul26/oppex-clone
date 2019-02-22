@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-login',
@@ -13,8 +14,11 @@ export class LoginComponent implements OnInit {
     if (Form.invalid) {
       return;
     }
-    // this.postsService.addPosts(Form.value.title, Form.value.content);
-    Form.resetForm();
+    const authData = {password: Form.value.password, username: Form.value.username};
+    this.http.post('http://localhost:3000/login', authData)
+    .subscribe(res => {
+      console.log(res);
+    });
   }
 
   func() {
@@ -27,7 +31,7 @@ export class LoginComponent implements OnInit {
     this.router.navigate(['/login']);
   }
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private http: HttpClient) { }
 
   ngOnInit() {
   }

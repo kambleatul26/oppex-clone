@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { Router } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-header',
@@ -12,11 +14,14 @@ export class HeaderComponent implements OnInit {
     if (Form.invalid) {
       return;
     }
-    // this.postsService.addPosts(Form.value.title, Form.value.content);
-    Form.resetForm();
+    const authData = {password: Form.value.password, username: Form.value.username};
+    this.http.post('http://localhost:3000/login', authData)
+    .subscribe(res => {
+      console.log(res);
+    });
   }
 
-  constructor() { }
+  constructor(private router: Router, private http: HttpClient) { }
 
   ngOnInit() {
   }

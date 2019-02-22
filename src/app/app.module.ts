@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatInputModule, MatCardModule, MatButtonModule, MatToolbarModule } from '@angular/material';
 
@@ -33,6 +34,7 @@ import { SignupComponent } from './signup/signup.component';
     FormsModule,
     MatButtonModule,
     MatToolbarModule,
+    HttpClientModule,
     RouterModule.forRoot([
       {path: 'home', component: BodyComponent},
       {path: 'search', component: SearchComponent},

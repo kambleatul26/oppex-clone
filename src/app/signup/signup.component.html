@@ -19,24 +19,21 @@
         </mat-toolbar>
         <form action="" (submit)="onSignup(postForm)" #postForm="ngForm">
             <mat-form-field>
-                <input matInput type="text" placeholder="First Name" name="fname" ngModel required #fname="ngModel">
-                <mat-error *ngIf="fname.invalid">Please Enter First Name</mat-error>
+                <input matInput type="text" placeholder="User Name" name="username" ngModel required #username="ngModel">
+                <mat-error *ngIf="username.invalid">Please Enter First Name</mat-error>
             </mat-form-field>
             <mat-form-field>
-                <input matInput type="text" placeholder="Last Name" name="lname" ngModel required #lname="ngModel">
-                <mat-error *ngIf="lname.invalid">Please Enter Last Name</mat-error>
-            </mat-form-field>
-            <mat-form-field>
-                <input matInput type="email" placeholder="Email ID" name="email" ngModel required #mail="ngModel">
+                <input matInput type="email" placeholder="Email ID" name="email" ngModel required #mail="ngModel" email>
                 <mat-error *ngIf="mail.invalid">Please Enter Email</mat-error>
             </mat-form-field>
             <mat-form-field>
-                <input matInput type="password" placeholder="Password" name="pass1" ngModel minlength="8" required #pass1="ngModel">
+                <input matInput type="password" placeholder="Password" name="password" ngModel minlength="8" required #password="ngModel" password>
+                <mat-error *ngIf="password.invalid">Please Enter Password</mat-error>
             </mat-form-field>
-            <mat-form-field>
-                <input matInput type="password" placeholder="Confirm Password" name="pass2" ngModel required #pass2="ngModel">
+            <!-- <mat-form-field>
+                <input matInput type="password" placeholder="Confirm Password" name="pass2" ngModel required #pass2="ngModel" pass2>
                 <mat-error *ngIf="pass1 !== pass2">PASSWORDS DO NOT MATCH</mat-error>
-            </mat-form-field>
+            </mat-form-field> -->
             <button mat-raised-button color="primary" type="submit">GET STARTED</button>
 
         </form>

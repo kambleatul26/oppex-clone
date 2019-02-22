@@ -30,20 +30,19 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form action="" (submit)="onLogin(postForm)" #postForm="ngForm">
-                    <mat-card>
-                        <mat-form-field>
-                            <input matInput type="email" placeholder="Email ID" name="email" ngModel required #mail="ngModel">
-                            <mat-error *ngIf="mail.invalid">Please Enter Email</mat-error>
-                        </mat-form-field>
-                        <mat-form-field>
-                            <input matInput type="password" placeholder="password" name="pass" ngModel required #pass="ngModel">
-                        </mat-form-field>
-                        <button mat-raised-button color="primary" type="submit">LOGIN</button>
-                        <button mat-raised-button color="warn">FORGOT PASSWORD</button>
+              <form action="" (submit)="onLogin(postForm)" #postForm="ngForm">
+                <mat-form-field>
+                    <input matInput type="text" placeholder="User Name" name="username" ngModel required #username="ngModel" username>
+                    <mat-error *ngIf="username.invalid">Please Enter Username</mat-error>
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput type="password" placeholder="password" name="password" ngModel required #password="ngModel" password>
+                    <mat-error *ngIf="password.invalid">Please Enter Password</mat-error>
+                </mat-form-field>
+                <button mat-raised-button color="primary" type="submit">LOGIN</button>
+                <button mat-raised-button color="warn">FORGOT PASSWORD</button>
 
-                    </mat-card>
-                </form>
+            </form>
             </div>
         </div>
     </div>
