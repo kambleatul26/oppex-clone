@@ -1,0 +1,49 @@
+[33mcommit b7ab095f019bffc1b7a52f00160e5a124404c101[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Atul Kamble <atulkamble@localhost.localdomain>
+Date:   Fri Feb 22 23:13:09 2019 +0530
+
+    Authentication added but inside pages, dynamic navbar and search
+
+[33mcommit 2cb4f040711268be4fafb037d8f86eb50649aa66[m
+Author: Atul Kamble <atulkamble@localhost.localdomain>
+Date:   Tue Feb 19 12:15:09 2019 +0530
+
+    submission but SEARCH, password validation
+
+[33mcommit c2a21e67bf48262bbfafcd61d4b16e20c81821af[m
+Author: Atul Kamble <atulkamble@localhost.localdomain>
+Date:   Tue Feb 19 00:22:52 2019 +0530
+
+    mainpage but PRICING AND SEARCH, password validation
+
+[33mcommit bd9d4d82715e05839a85809cba91efdad5e71505[m
+Author: Atul Kamble <atulkamble@localhost.localdomain>
+Date:   Mon Feb 18 20:47:04 2019 +0530
+
+    login page, modal done but PRICING AND SEARCH, password validation
+
+[33mcommit 7fd2bbda6483659e7d09310ac575e4cde549d3e5[m
+Author: Atul Kamble <atulkamble@localhost.localdomain>
+Date:   Mon Feb 18 06:54:56 2019 +0530
+
+    Revert "routing done"
+    
+    This reverts commit ce22e81a3bc8431afa8cea2cd0628e7ae5045548.
+
+[33mcommit ce22e81a3bc8431afa8cea2cd0628e7ae5045548[m
+Author: Atul Kamble <atulkamble@localhost.localdomain>
+Date:   Sat Feb 16 20:53:30 2019 +0530
+
+    routing done
+
+[33mcommit 526098a635229c91ba4cac2442562cc1b4b56301[m
+Author: Atul Kamble <atulkamble@localhost.localdomain>
+Date:   Fri Feb 15 20:48:48 2019 +0530
+
+    Your Message
+
+[33mcommit 9a3d619632a9ebe9665f0b39b7faf3a13998a08d[m
+Author: Atul Kamble <atulkamble@localhost.localdomain>
+Date:   Fri Feb 15 20:47:42 2019 +0530
+
+    start

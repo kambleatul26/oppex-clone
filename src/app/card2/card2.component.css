@@ -1,0 +1,47 @@
+.card_size {
+    max-width: 700px;
+   
+  }
+  .ft_l{
+    font-weight: 100;
+ }
+ a{
+     margin-top:30px;
+ }
+ 
+ mat-card{
+    border:2px solid green;
+
+     margin-left:30px;
+ } 
+ .hv :hover{
+      border-color:#1ECDEE;
+    
+     
+
+ }
+ mat-card-title{
+        margin-left:120px;
+      
+        
+ }
+ .i{
+      margin-left:auto;
+      margin-right:auto;
+      
+      width:150px;
+  }
+  .b{
+    font-size:25px;
+  }
+  .e{
+    font-size:20px;
+  }
+  li {
+    text-align: left;
+    font-weight: bold;
+  }
+  li .v{
+        font-weight: normal;
+  }
+  

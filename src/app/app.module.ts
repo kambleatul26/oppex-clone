@@ -4,6 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatInputModule, MatCardModule, MatButtonModule, MatToolbarModule } from '@angular/material';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -14,6 +16,9 @@ import { PricingComponent } from './pricing/pricing.component';
 import { LoginComponent } from './login/login.component';
 import { RouterModule } from '@angular/router';
 import { SignupComponent } from './signup/signup.component';
+import { Card1Component } from './card1/card1.component';
+import { Card2Component } from './card2/card2.component';
+import { Card3Component } from './card3/card3.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +29,10 @@ import { SignupComponent } from './signup/signup.component';
     SearchComponent,
     PricingComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    Card1Component,
+    Card2Component,
+    Card3Component
   ],
   imports: [
     BrowserModule,
@@ -35,6 +43,8 @@ import { SignupComponent } from './signup/signup.component';
     MatButtonModule,
     MatToolbarModule,
     HttpClientModule,
+    AngularFireDatabaseModule,
+    AngularFireModule,
     RouterModule.forRoot([
       {path: 'home', component: BodyComponent},
       {path: 'search', component: SearchComponent},
