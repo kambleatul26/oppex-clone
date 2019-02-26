@@ -21,7 +21,6 @@ import { Card2Component } from './card2/card2.component';
 import { Card3Component } from './card3/card3.component';
 import { LivetenderComponent } from './livetender/livetender.component';
 import { WinnerComponent } from './winner/winner.component';
-import { from } from 'rxjs';
 
 @NgModule({
   declarations: [
