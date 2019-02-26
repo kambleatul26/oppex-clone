@@ -10,6 +10,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class HeaderComponent implements OnInit {
 
+  public isloggedin = true;
+
   onLogin(Form: NgForm) {
     if (Form.invalid) {
       return;
@@ -18,12 +20,26 @@ export class HeaderComponent implements OnInit {
     this.http.post('http://localhost:3000/login', authData)
     .subscribe(res => {
       console.log(res);
+      this.isloggedin = res[status];
+    });
+  }
+
+  onLogout() {
+    this.http.get('http://localhost:3000/logout')
+    .subscribe(res => {
+      console.log(res);
+      this.isloggedin = res[status];
     });
   }
 
   constructor(private router: Router, private http: HttpClient) { }
 
   ngOnInit() {
+    this.http.get('http://localhost:3000/islogged')
+    .subscribe(res => {
+      console.log(res);
+      this.isloggedin = res[status];
+    });
   }
 
 }

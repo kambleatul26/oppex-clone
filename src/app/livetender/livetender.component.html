@@ -1,0 +1,65 @@
+<form action="" (submit)="onSignup(postForm)" #postForm="ngForm">
+  <div class="row">
+    <div class="col-lg-2"></div>
+    <div class="col-lg-5">
+      <mat-form-field>
+        <input matInput type="text" placeholder="Keywords" name="keyword" ngModel  #keyword="ngModel">
+        
+      </mat-form-field>
+  </div>
+    <div class="col-lg-3">
+        <mat-form-field>
+            <input matInput type="text" placeholder="Location" name="location" ngModel #location="ngModel">
+            
+        </mat-form-field>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-lg-2"></div>
+    <div class="col-lg-4">
+      <mat-form-field>
+        <input matInput type="number" placeholder="Min Value" name="min" ngModel  #min="ngModel">
+        
+    </mat-form-field>
+    </div>
+    <div class="col-lg-4">
+      <mat-form-field>
+        <input matInput type="number" placeholder="Max Value" name="max" ngModel #max="ngModel">
+        <mat-error *ngIf=" min > max ">ENTER LARGER NUMBER</mat-error>
+      </mat-form-field>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-2"></div>
+    <div class="col-lg-4">
+      <mat-form-field>
+        <input matInput type="text" placeholder="Buyer Name" name="bname" ngModel  #bname="ngModel">
+        
+    </mat-form-field> 
+  </div>
+    <div class="col-lg-4">
+      <mat-form-field>
+        <input matInput type="text" placeholder="CPV"  name="cpv" ngModel  #cpv="ngModel">
+    </mat-form-field>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-2"></div>
+    <div class="col-lg-4">
+      <mat-form-field>
+        <input matInput type="text" placeholder="Published" name="pub" ngModel  #pub="ngModel">
+  
+    </mat-form-field> 
+  </div>
+    <div class="col-lg-4">
+      <mat-form-field>
+        <input matInput type="text" placeholder="Deadline" name="dline" ngModel  required #dline="ngModel">
+    </mat-form-field>
+    </div>
+  </div>
+
+ 
+  
+</form>

@@ -14,8 +14,9 @@
             </li>
         </ul>
         <ul class="nav navbar-nav navbar-right" style="clear: both;">
-            <li><a href="#" class="btn btn-success" routerLink="signup">Start Trial</a></li>&nbsp;&nbsp;
-            <li><a href="#" class="btn btn-light" data-toggle="modal" data-target="#exampleModal">Login</a></li>
+            <li *ngIf="!isloggedin"><a href="#" class="btn btn-success" routerLink="signup">Start Trial</a></li>&nbsp;&nbsp;
+            <li *ngIf="!isloggedin"><a href="#" class="btn btn-light" data-toggle="modal" data-target="#exampleModal">Login</a></li>
+            <li *ngIf="isloggedin"><a href="#" (click)="onLogout()" class="btn btn-light">Logout</a></li>
         </ul>
     </div>
 </nav>

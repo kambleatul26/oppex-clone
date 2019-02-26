@@ -1,0 +1,22 @@
+.container{
+    height:500px;
+    text-align: center;
+    }
+p{
+    text-align: center;
+    padding: 20px;
+    color:#FFFFFF	;
+}
+ul{
+    margin-left: 615px;
+}
+#menu ul{
+    list-style: none;
+  }
+#menu li{
+    display: inline;
+  }
+  
+ li{
+     padding:20px;
+ } 

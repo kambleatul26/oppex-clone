@@ -19,6 +19,9 @@ import { SignupComponent } from './signup/signup.component';
 import { Card1Component } from './card1/card1.component';
 import { Card2Component } from './card2/card2.component';
 import { Card3Component } from './card3/card3.component';
+import { LivetenderComponent } from './livetender/livetender.component';
+import { WinnerComponent } from './winner/winner.component';
+import { from } from 'rxjs';
 
 @NgModule({
   declarations: [
@@ -32,7 +35,9 @@ import { Card3Component } from './card3/card3.component';
     SignupComponent,
     Card1Component,
     Card2Component,
-    Card3Component
+    Card3Component,
+    LivetenderComponent,
+    WinnerComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +52,10 @@ import { Card3Component } from './card3/card3.component';
     AngularFireModule,
     RouterModule.forRoot([
       {path: 'home', component: BodyComponent},
-      {path: 'search', component: SearchComponent},
+      {path: 'search', component: SearchComponent, children: [
+        {path: 'livetender', component: LivetenderComponent},
+        {path: 'winner', component: WinnerComponent}
+      ]},
       {path: 'pricing', component: PricingComponent},
       {path: 'signup', component: SignupComponent},
       {path: 'login', component: LoginComponent},

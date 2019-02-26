@@ -1,3 +1,27 @@
-<p>
-  search works!
-</p>
+<div>
+  <nav class="navbar bg-light navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="li_alg nav-item navbar">
+                <a class="nav-link"  routerLink="livetender" routerLinkActive="active"><span class="whiteText">LIVE TENDERS</span></a>
+            </li>
+            <li class="nav-item navbar">
+                <a class="nav-link" routerLink="winner"><span class="whiteText">WINNERS</span></a>
+            </li>
+        </ul>
+
+    </div>
+
+</nav>
+</div>
+<router-outlet></router-outlet>
+
+<div>
+  <p class="a">9,000,000 tenders at your fingertips.</p>
+  <p class="b">Start free trial for 14 days. No credit card needed.</p>
+  <div class="c"><a href="#" class="btn btn-success btn-lg">START FREE TRIAL</a></div>
+</div>

@@ -61,16 +61,50 @@ app.post("/signup",function(req, res){
 
 app.post("/login", passport.authenticate('local') , function(req, res){
   console.log("Success");
+  if(req.isAuthenticated()){
+    res.json({
+      status: true,
+    });
+    console.log("true LOGIN");
+  }
+  else{
+    res.json({
+      status: false,
+    });
+    console.log("false LOGIN");
+  }
 });
 
 app.get("/logout", function(req, res){
   req.logout();
+  if(req.isAuthenticated()){
+    res.json({
+      status: true,
+    });
+    console.log("true LOGOUT");
+  }
+  else{
+    res.json({
+      status: false,
+    });
+    console.log("false LOGOUT");
+  }
 });
 
-function isLoggedIn(req, res, next){
+app.get("/islogged", function(req, res){
   if(req.isAuthenticated()){
-    return next();
+    res.json({
+      status: true,
+    });
+    console.log("true LOGGED");
   }
-}
+  else{
+    res.json({
+      status: false,
+    });
+    console.log("false LOGGED");
+  }
+});
+
 
 module.exports = app;
