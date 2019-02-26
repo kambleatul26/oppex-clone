@@ -1,26 +1,26 @@
-<form action="" (submit)="onSignup(postForm)" #postForm="ngForm">
+<form action="" #postForm="ngForm">
   <div class="row">
     <div class="col-lg-2"></div>
     <div class="col-lg-5">
       <mat-form-field>
         <input matInput type="text" placeholder="Keywords" name="keyword" ngModel  #keyword="ngModel">
-        
+
       </mat-form-field>
   </div>
     <div class="col-lg-3">
         <mat-form-field>
             <input matInput type="text" placeholder="Location" name="location" ngModel #location="ngModel">
-            
+
         </mat-form-field>
     </div>
   </div>
-  
+
   <div class="row">
     <div class="col-lg-2"></div>
     <div class="col-lg-4">
       <mat-form-field>
         <input matInput type="number" placeholder="Min Value" name="min" ngModel  #min="ngModel">
-        
+
     </mat-form-field>
     </div>
     <div class="col-lg-4">
@@ -36,8 +36,8 @@
     <div class="col-lg-4">
       <mat-form-field>
         <input matInput type="text" placeholder="Buyer Name" name="bname" ngModel  #bname="ngModel">
-        
-    </mat-form-field> 
+
+    </mat-form-field>
   </div>
     <div class="col-lg-4">
       <mat-form-field>
@@ -50,16 +50,16 @@
     <div class="col-lg-4">
       <mat-form-field>
         <input matInput type="text" placeholder="Published" name="pub" ngModel  #pub="ngModel">
-  
-    </mat-form-field> 
+
+    </mat-form-field>
   </div>
     <div class="col-lg-4">
       <mat-form-field>
-        <input matInput type="text" placeholder="Deadline" name="dline" ngModel  required #dline="ngModel">
+        <input matInput type="text" placeholder="Deadline" name="dline" ngModel #dline="ngModel">
     </mat-form-field>
     </div>
   </div>
 
- 
-  
+
+
 </form>

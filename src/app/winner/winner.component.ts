@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-winner',
@@ -7,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WinnerComponent implements OnInit {
 
-  constructor() { }
+  func() {
+    this.router.navigate([parent]);
+    this.router.navigate(['/signup']);
+  }
+
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }

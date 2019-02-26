@@ -54,7 +54,8 @@ import { from } from 'rxjs';
       {path: 'home', component: BodyComponent},
       {path: 'search', component: SearchComponent, children: [
         {path: 'livetender', component: LivetenderComponent},
-        {path: 'winner', component: WinnerComponent}
+        {path: 'winner', component: WinnerComponent},
+        {path: '**', component: LivetenderComponent}
       ]},
       {path: 'pricing', component: PricingComponent},
       {path: 'signup', component: SignupComponent},

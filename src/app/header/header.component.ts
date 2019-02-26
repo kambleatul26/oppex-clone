@@ -10,9 +10,10 @@ import { HttpClient } from '@angular/common/http';
 })
 export class HeaderComponent implements OnInit {
 
-  public isloggedin = true;
+  public isloggedin = false;
 
   onLogin(Form: NgForm) {
+    this.isloggedin = true;
     if (Form.invalid) {
       return;
     }
@@ -25,6 +26,7 @@ export class HeaderComponent implements OnInit {
   }
 
   onLogout() {
+    this.isloggedin = false;
     this.http.get('http://localhost:3000/logout')
     .subscribe(res => {
       console.log(res);
@@ -41,5 +43,4 @@ export class HeaderComponent implements OnInit {
       this.isloggedin = res[status];
     });
   }
-
 }
