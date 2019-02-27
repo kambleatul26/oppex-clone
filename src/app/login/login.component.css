@@ -4,7 +4,7 @@ mat-form-field {
 
 .back {
   height: 100%;
-  background-image: url("/src/assets/images/header.jpeg");
+  background-image: url("/assets/images/header.jpeg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
